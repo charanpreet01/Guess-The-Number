@@ -78,16 +78,7 @@ let endGame = () => {
 let newGame = () => {
     const newGame = document.querySelector("#newGame");
     newGame.addEventListener("click", (e) => {
-        let randomNumber = parseInt(Math.random() * 100 + 1)
-        prevGuesses = [];
-        numGuess = 1;
-        guessSlot.innerHTML = "";
-        remaining.innerHTML = `${10 - numGuess}`;
-        userInput.removeAttribute("disabled");
-        submit.removeAttribute("disabled");
-        startOver.removeChild("p");
-
-        playGame = true;
+        location.reload();
     })
 
 }
